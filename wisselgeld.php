@@ -2,7 +2,7 @@
 
 $inputField =  (round)($argv[1] , 2);
 
-define (
+define(
     "MUNTGELD" ,  
     [
     "50" => "euro",
@@ -24,7 +24,7 @@ define (
 
 foreach ( MUNTGELD as $moneyValue => $type ){
     $moneyValue = (float)$moneyValue;
-    $inputField = round($inputField ,1) * 5;
+    $inputField = round($inputField , 1) * 5;
 
     if (floor($inputField / $moneyValue) > 0) {
         $amount = floor($inputField / $moneyValue);
