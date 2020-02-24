@@ -24,7 +24,7 @@ define (
 
 foreach ( MUNTGELD as $moneyValue => $type ){
     $moneyValue = (float)$moneyValue;
-    $inputField = round($inputField ,2);
+    $inputField = round($inputField ,1) * 5;
 
     if (floor($inputField / $moneyValue) > 0) {
         $amount = floor($inputField / $moneyValue);
